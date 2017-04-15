@@ -72,6 +72,7 @@ namespace Task2_1_Rabbit_Hole
                     else if (command[length - 1] == "RabbitHole")
                     {
                         AddBomb(command, changeEnergy, energy);
+                        RunCommand(command, changeEnergy, currentIndex, energy);
                     }
                     else 
                     {
@@ -97,6 +98,7 @@ namespace Task2_1_Rabbit_Hole
                     else if (command[length - 1] == "RabbitHole")
                     {
                         AddBomb(command, changeEnergy, energy);
+                        RunCommand(command, changeEnergy, currentIndex, energy);
                     }
                     else
                     {
