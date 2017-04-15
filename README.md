@@ -14,7 +14,9 @@ You will be given an array of strings representing different obstacles you shoul
 4.	“RabbitHole” – you have found the rabbit hole, the program should stop here, print on the console – “You have 5 years to save Kennedy!”
  
 Example input:
+
 Right|1 Right|10 Left|10 RabbitHole Right|1 Left|2
+
 100
 
 If your jump is outside of the bonds of the array, you should continue from the beggining. If you are at index 1 and command is Right|10 -> you must jump 5 times to the end and then another 5 times from the beginning.
