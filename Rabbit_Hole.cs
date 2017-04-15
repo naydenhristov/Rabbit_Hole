@@ -29,17 +29,17 @@ namespace Task2_1_Rabbit_Hole
         {
             foreach (string element in inputList)
             {
-                string[] initLists = element.Split('|').ToArray();
+                string[] initElement = element.Split('|').ToArray();
 
-                if (initLists[0] == "RabbitHole")
+                if (initElement[0] == "RabbitHole")
                 {
-                    command.Add(initLists[0]);
+                    command.Add(initElement[0]);
                     changeEnergy.Add(0);
                 }
                 else
                 {
-                    command.Add(initLists[0]);
-                    changeEnergy.Add(Convert.ToInt32(initLists[1]));
+                    command.Add(initElement[0]);
+                    changeEnergy.Add(Convert.ToInt32(initElement[1]));
                 }
             }
         }
@@ -72,6 +72,7 @@ namespace Task2_1_Rabbit_Hole
                     else if (command[length - 1] == "RabbitHole")
                     {
                         AddBomb(command, changeEnergy, energy);
+                        RunCommand(command, changeEnergy, currentIndex, energy);
                     }
                     else 
                     {
@@ -97,6 +98,7 @@ namespace Task2_1_Rabbit_Hole
                     else if (command[length - 1] == "RabbitHole")
                     {
                         AddBomb(command, changeEnergy, energy);
+                        RunCommand(command, changeEnergy, currentIndex, energy);
                     }
                     else
                     {
