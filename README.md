@@ -9,7 +9,7 @@ You will be given an array of strings representing different obstacles you shoul
 
 2.	“Right|[integer value]”-you should jump to the right with [integer value] positions and decrease your energy with [integer value];
 
-3.	“Bomb|[integer value]”-the bomb explodes and this element of the array should be removed, your energy should be decreased be the [integer value], you should start from the beginning (index 0);
+3.	“Bomb|[integer value]”-the bomb explodes and this element of the array should be removed, your energy should be decreased by the [integer value], you should start from the beginning (index 0);
 
 4.	“RabbitHole” – you have found the rabbit hole, the program should stop here, print on the console – “You have 5 years to save Kennedy!”
  
@@ -17,7 +17,7 @@ Example input:
 Right|1 Right|10 Left|10 RabbitHole Right|1 Left|2
 100
 
-If your jump is outside of the bonds of the array, you should continue from the beggining. If you are at index 1 and command is Right|10 -> you must jump 5 times to the end and then anothe 5 times from the beginning.
+If your jump is outside of the bonds of the array, you should continue from the beggining. If you are at index 1 and command is Right|10 -> you must jump 5 times to the end and then another 5 times from the beginning.
 
 Your mission begins at the first element of the array. The rabbit hole will be only one.
 The program ends when you find the rabbit hole or when your energy is gone. And if it is gone due to bomb explosion you should print “You are dead due to bomb explosion!” on the console or if it is due jumps print
